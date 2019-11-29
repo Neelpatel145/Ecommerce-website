@@ -39,7 +39,7 @@
                         
                         <div class="col-md-6">
                         
-                            <input value=" console.log(box_title);" name="box_title" type="text" class="form-control">
+                            <input value= "box_title" name="box_title" type="text" class="form-control">
                         
                         </div>
                     
@@ -54,7 +54,7 @@
                         
                         <div class="col-md-6">
                         
-                            <textarea type='text' name="box_desc" class="form-control">console.log(box_desc); </textarea>
+                            <textarea type='text' name="box_desc" class="form-control"> console.log(box_desc); </textarea>
                         
                         </div>
                     
