@@ -1,119 +1,93 @@
-if(!isset($_SESSION['admin_email'])){
-        
-        console.log("<script>window.open('login.ejs','_self')</script>");
+<script>
+        window.open(/login/);
+</script>
         
     }else{
 
-    if(isset($_GET['edit_box'])){
-        
-        edit_box_id = $_GET['edit_box'];
-        
-        edit_box_query = "select * from boxes_section where box_id='edit_box_id'";
-        
-        run_edit_box = mysqli_query(con,edit_box_query);
-        
-        row_edit_box = mysqli_fetch_array(run_edit_box);
-        
-        box_id = row_edit_box['box_id'];
-        
-        box_title = row_edit_box['box_title'];
-        
-        box_desc = row_edit_box['box_desc'];
-        
-    }
-
-<div class="row"><!-- row 1 begin -->
-    <div class="col-lg-12"><!-- col-lg-12 begin -->
-        <ol class="breadcrumb"><!-- breadcrumb begin -->
+<div class="row">
+    <div class="col-lg-12">
+        <ol class="breadcrumb">
             <li>
                 
                 <i class="fa fa-dashboard"></i> Dashboard / Edit Box
                 
             </li>
-        </ol><!-- breadcrumb finish -->
-    </div><!-- col-lg-12 finish -->
-</div><!-- row 1 finish -->
+        </ol>
+    </div>
+</div>
 
-<div class="row"><!-- row 2 begin -->
-    <div class="col-lg-12"><!-- col-lg-12 begin -->
-        <div class="panel panel-default"><!-- panel panel-default begin -->
-            <div class="panel-heading"><!-- panel-heading begin -->
-                <h3 class="panel-title"><!-- panel-title begin -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">
                 
                     <i class="fa fa-pencil fa-fw"></i> Edit Box
                 
-                </h3><!-- panel-title finish -->
-            </div><!-- panel-heading finish -->
+                </h3>
+            </div>
             
-            <div class="panel-body"><!-- panel-body begin -->
-                <form action="" class="form-horizontal" method="post"><!-- form-horizontal begin -->
-                    <div class="form-group"><!-- form-group begin -->
+            <div class="panel-body">
+                <form action="" class="form-horizontal" method="post">
+                    <div class="form-group">
                     
-                        <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
+                        <label for="" class="control-label col-md-3">
                         
                             Box Title 
                         
-                        </label><!-- control-label col-md-3 finish --> 
+                        </label>
                         
-                        <div class="col-md-6"><!-- col-md-6 begin -->
+                        <div class="col-md-6">
                         
-                            <input value=" console.log(box_title); ?> " name="box_title" type="text" class="form-control">
+                            <input value=" console.log(box_title);" name="box_title" type="text" class="form-control">
                         
-                        </div><!-- col-md-6 finish -->
+                        </div>
                     
-                    </div><!-- form-group finish -->
-                    <div class="form-group"><!-- form-group begin -->
+                    </div>
+                    <div class="form-group">
                     
-                        <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
+                        <label for="" class="control-label col-md-3"> 
                         
                             Box Description 
                         
-                        </label><!-- control-label col-md-3 finish --> 
+                        </label>
                         
-                        <div class="col-md-6"><!-- col-md-6 begin -->
+                        <div class="col-md-6">
                         
                             <textarea type='text' name="box_desc" class="form-control">console.log(box_desc); </textarea>
                         
-                        </div><!-- col-md-6 finish -->
+                        </div>
                     
-                    </div><!-- form-group finish -->
-                    <div class="form-group"><!-- form-group begin -->
+                    </div>
+                    <div class="form-group">
                     
-                        <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
+                        <label for="" class="control-label col-md-3">
                         
                              
                         
-                        </label><!-- control-label col-md-3 finish --> 
+                        </label>
                         
-                        <div class="col-md-6"><!-- col-md-6 begin -->
+                        <div class="col-md-6">
                         
                             <input value="Update Box" name="update_box" type="submit" class="form-control btn btn-primary">
                         
-                        </div><!-- col-md-6 finish -->
+                        </div>
                     
-                    </div><!-- form-group finish -->
-                </form><!-- form-horizontal finish -->
-            </div><!-- panel-body finish -->
+                    </div>
+                </form>
+            </div>
             
-        </div><!-- panel panel-default finish -->
-    </div><!-- col-lg-12 finish -->
-</div><!-- row 2 finish -->
-
-if(isset($_POST['update_box'])){
-              
-              box_title = $_POST['box_title'];
-              
-              box_desc = $_POST['box_desc'];
-              
-              update_box = "update boxes_section set box_title='box_title',box_desc='box_desc' where box_id='box_id'";
-              
-              run_box = mysqli_query(con,update_box);
+        </div>
+    </div>
+</div>
               
               if(run_box){
                   
-                  console.log("<script>alert('Your Box Has Been Updated')</script>");
+                  <script>alert('Your Box Has Been Updated')</script>
                   
-                  console.log("<script>window.open('/index.ejs?/<%= view_boxes %>','_self')</script>");
+                  <script>
+                          window.open(/index/<%= view_boxes %>);
+                  </script>
                   
               }
               
