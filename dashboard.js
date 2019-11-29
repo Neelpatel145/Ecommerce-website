@@ -1,207 +1,210 @@
-if(!isset($_SESSION['admin_email'])){
-        
-        console.log("<script>window.open('login.php','_self')</script>");
-        
-    }else{
+<script>window.open(/login.ejs/)</script>
 
-
-<div class="row"><!-- row no: 1 begin -->
-    <div class="col-lg-12"><!-- col-lg-12 begin -->
+<div class="row">
+    <div class="col-lg-12">
         <h1 class="page-header"> Dashboard </h1>
         
-        <ol class="breadcrumb"><!-- breadcrumb begin -->
-            <li class="active"><!-- active begin -->
+        <ol class="breadcrumb">
+            <li class="active">
             
                 <i class="fa fa-dashboard"></i> Dashboard
             
-            </li><!-- active finish -->
-        </ol><!-- breadcrumb finish -->
+            </li>
+        </ol>
         
-    </div><!-- col-lg-12 finish -->
-</div><!-- row no: 1 finish -->
+    </div>
+</div>
 
-<div class="row"><!-- row no: 2 begin -->
+<div class="row">
    
-    <div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 begin -->
-        <div class="panel panel-primary"><!-- panel panel-primary begin -->
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-primary">
             
-            <div class="panel-heading"><!-- panel-heading begin -->
-                <div class="row"><!-- panel-heading row begin -->
-                    <div class="col-xs-3"><!-- col-xs-3 begin -->
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
                        
                         <i class="fa fa-tasks fa-5x"></i>
                         
-                    </div><!-- col-xs-3 finish -->
+                    </div>
                     
-                    <div class="col-xs-9 text-right"><!-- col-xs-9 text-right begin -->
-                        <div class="huge"> console.log(count_products); </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge"> 
+                                console.log(count_products); 
+                       </div>
                            
                         <div> Products </div>
                         
-                    </div><!-- col-xs-9 text-right finish -->
+                    </div>
                     
-                </div><!-- panel-heading row finish -->
-            </div><!-- panel-heading finish -->
+                </div>
+            </div>
             
-            <a href="/index.ejs/<%= view_products %>"><!-- a href begin -->
-                <div class="panel-footer"><!-- panel-footer begin -->
+            <a href="/index/<%= view_products %>">
+                <div class="panel-footer">
                    
-                    <span class="pull-left"><!-- pull-left begin -->
+                    <span class="pull-left">
                         View Details 
-                    </span><!-- pull-left finish -->
+                    </span>
                     
-                    <span class="pull-right"><!-- pull-right begin --> 
+                    <span class="pull-right">
                         <i class="fa fa-arrow-circle-right"></i> 
-                    </span><!-- pull-right finish --> 
+                    </span>
                     
                     <div class="clearfix"></div>
                     
-                </div><!-- panel-footer finish -->
-            </a><!-- a href finish -->
+                </div>
+            </a>
             
-        </div><!-- panel panel-primary finish -->
-    </div><!-- col-lg-3 col-md-6 finish -->
+        </div>
+    </div>
    
-    <div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 begin -->
-        <div class="panel panel-green"><!-- panel panel-green begin -->
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-green">
             
-            <div class="panel-heading"><!-- panel-heading begin -->
-                <div class="row"><!-- panel-heading row begin -->
-                    <div class="col-xs-3"><!-- col-xs-3 begin -->
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
                        
                         <i class="fa fa-users fa-5x"></i>
                         
-                    </div><!-- col-xs-3 finish -->
+                    </div>
                     
-                    <div class="col-xs-9 text-right"><!-- col-xs-9 text-right begin -->
-                        <div class="huge"> console.log(count_customers); </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">
+                                console.log(count_customers); 
+                       </div>
                            
                         <div> Customers </div>
                         
-                    </div><!-- col-xs-9 text-right finish -->
+                    </div>
                     
-                </div><!-- panel-heading row finish -->
-            </div><!-- panel-heading finish -->
+                </div>
+            </div>
             
-            <a href="/index.ejs/<%= view_customers %>"><!-- a href begin -->
-                <div class="panel-footer"><!-- panel-footer begin -->
+            <a href="/index/<%= view_customers %>">
+                <div class="panel-footer">
                    
-                    <span class="pull-left"><!-- pull-left begin -->
+                    <span class="pull-left">
                         View Details 
-                    </span><!-- pull-left finish -->
+                    </span>
                     
-                    <span class="pull-right"><!-- pull-right begin --> 
+                    <span class="pull-right">
                         <i class="fa fa-arrow-circle-right"></i> 
-                    </span><!-- pull-right finish --> 
+                    </span>
                     
                     <div class="clearfix"></div>
                     
-                </div><!-- panel-footer finish -->
-            </a><!-- a href finish -->
+                </div>
+            </a>
             
-        </div><!-- panel panel-green finish -->
-    </div><!-- col-lg-3 col-md-6 finish -->
+        </div>
+    </div>
    
-    <div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 begin -->
-        <div class="panel panel-orange"><!-- panel panel-yellow begin -->
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-orange">
             
-            <div class="panel-heading"><!-- panel-heading begin -->
-                <div class="row"><!-- panel-heading row begin -->
-                    <div class="col-xs-3"><!-- col-xs-3 begin -->
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
                        
                         <i class="fa fa-tags fa-5x"></i>
                         
-                    </div><!-- col-xs-3 finish -->
+                    </div>
                     
-                    <div class="col-xs-9 text-right"><!-- col-xs-9 text-right begin -->
-                        <div class="huge"> console.log(count_p_categories); </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge"> 
+                                console.log(count_p_categories);
+                       </div>
                            
                         <div> Product Categories </div>
                         
-                    </div><!-- col-xs-9 text-right finish -->
+                    </div>
                     
-                </div><!-- panel-heading row finish -->
-            </div><!-- panel-heading finish -->
+                </div>
+            </div>
             
-            <a href="/index.ejs/<%= view_p_cats %>"><!-- a href begin -->
-                <div class="panel-footer"><!-- panel-footer begin -->
+            <a href="/index/<%= view_p_cats %>">
+                <div class="panel-footer">
                    
-                    <span class="pull-left"><!-- pull-left begin -->
+                    <span class="pull-left">
                         View Details 
-                    </span><!-- pull-left finish -->
+                    </span>
                     
-                    <span class="pull-right"><!-- pull-right begin --> 
+                    <span class="pull-right">
                         <i class="fa fa-arrow-circle-right"></i> 
-                    </span><!-- pull-right finish --> 
+                    </span>
                     
                     <div class="clearfix"></div>
                     
-                </div><!-- panel-footer finish -->
-            </a><!-- a href finish -->
+                </div>
+            </a>
             
-        </div><!-- panel panel-yellow finish -->
-    </div><!-- col-lg-3 col-md-6 finish -->
+        </div>
+    </div>
    
-    <div class="col-lg-3 col-md-6"><!-- col-lg-3 col-md-6 begin -->
-        <div class="panel panel-red"><!-- panel panel-red begin -->
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-red">
             
-            <div class="panel-heading"><!-- panel-heading begin -->
-                <div class="row"><!-- panel-heading row begin -->
-                    <div class="col-xs-3"><!-- col-xs-3 begin -->
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
                        
                         <i class="fa fa-shopping-cart fa-5x"></i>
                         
-                    </div><!-- col-xs-3 finish -->
+                    </div>
                     
-                    <div class="col-xs-9 text-right"><!-- col-xs-9 text-right begin -->
-                        <div class="huge"> console.log(count_pending_orders); </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge"> 
+                                console.log(count_pending_orders); 
+                        </div>
                            
                         <div> Orders </div>
                         
-                    </div><!-- col-xs-9 text-right finish -->
+                    </div>
                     
-                </div><!-- panel-heading row finish -->
-            </div><!-- panel-heading finish -->
+                </div>
+            </div>
             
-            <a href="/index.ejs/<%= view_orders %>"><!-- a href begin -->
-                <div class="panel-footer"><!-- panel-footer begin -->
+            <a href="/index/<%= view_orders %>">
+                <div class="panel-footer">
                    
-                    <span class="pull-left"><!-- pull-left begin -->
+                    <span class="pull-left">
                         View Details 
-                    </span><!-- pull-left finish -->
+                    </span>
                     
-                    <span class="pull-right"><!-- pull-right begin --> 
+                    <span class="pull-right">
                         <i class="fa fa-arrow-circle-right"></i> 
-                    </span><!-- pull-right finish --> 
+                    </span>
                     
                     <div class="clearfix"></div>
                     
-                </div><!-- panel-footer finish -->
-            </a><!-- a href finish -->
+                </div>
+            </a>
             
-        </div><!-- panel panel-red finish -->
-    </div><!-- col-lg-3 col-md-6 finish -->
+        </div>
+    </div>
     
-</div><!-- row no: 2 finish -->
+</div>
 
-<div class="row"><!-- row no: 3 begin -->
-    <div class="col-lg-8"><!-- col-lg-8 begin -->
-        <div class="panel panel-primary"><!-- panel panel-primary begin -->
-            <div class="panel-heading"><!-- panel-heading begin -->
-                <h3 class="panel-title"><!-- panel-title begin -->
+<div class="row">
+    <div class="col-lg-8">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">
                     
                     <i class="fa fa-money fa-fw"></i> New Orders
                     
-                </h3><!-- panel-title finish -->
-            </div><!-- panel-heading finish -->
+                </h3>
+            </div>
             
-            <div class="panel-body"><!-- panel-body begin -->
-                <div class="table-responsive"><!-- table-responsive begin -->
-                    <table class="table table-hover table-striped table-bordered"><!-- table table-hover table-striped table-bordered begin -->
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped table-bordered">
                         
-                        <thead><!-- thead begin -->
+                        <thead>
                           
-                            <tr><!-- th begin -->
+                            <tr>
                            
                                 <th> Order no: </th>
                                 <th> Customer Email: </th>
@@ -211,54 +214,15 @@ if(!isset($_SESSION['admin_email'])){
                                 <th> Product Size: </th>
                                 <th> Status: </th>
                             
-                            </tr><!-- th finish -->
+                            </tr>
                             
-                        </thead><!-- thead finish -->
+                        </thead>
                         
-                        <tbody><!-- tbody begin -->
-                          
-                                i=0;
-          
-                                get_order = "select * from pending_orders order by 1 DESC LIMIT 0,5";
-          
-                                run_order = mysqli_query(con,get_order);
-          
-                                while(row_order=mysqli_fetch_array(run_order)){
-                                    
-                                    order_id = row_order['order_id'];
-                                    
-                                    c_id = row_order['customer_id'];
-                                    
-                                    invoice_no = row_order['invoice_no'];
-                                    
-                                    product_id = row_order['product_id'];
-                                    
-                                    qty = row_order['qty'];
-                                    
-                                    size = row_order['size'];
-                                    
-                                    order_status = row_order['order_status'];
-                                    
-                                    i++;
                             
                            
                             <tr><!-- tr begin -->
                                
                                 <td> console.log(order_id); </td>
-                                <td>
-                                    
-                                        get_customer = "select * from customers where customer_id='c_id'";
-                                    
-                                        run_customer = mysqli_query(con,get_customer);
-                                    
-                                        row_customer = mysqli_fetch_array(run_customer);
-                                    
-                                        customer_email = row_customer['customer_email'];
-                                    
-                                        console.log(customer_email);
-                                    
-                                    
-                                </td>
                                 <td> console.log(invoice_no); </td>
                                 <td> console.log(product_id); </td>
                                 <td> console.log(qty); </td>
@@ -274,72 +238,71 @@ if(!isset($_SESSION['admin_email'])){
                                             console.log(order_status='Complete');
                                             
                                         }
-                                    
-                                </td>
+                               </td>
                                 
-                            </tr><!-- tr finish -->
+                            </tr>
                             
                             }
                             
-                        </tbody><!-- tbody finish -->
+                        </tbody>
                         
-                    </table><!-- table table-hover table-striped table-bordered finish -->
-                </div><!-- table-responsive finish -->
+                    </table>
+                </div>
                 
-                <div class="text-right"><!-- text-right begin -->
+                <div class="text-right">
                     
-                    <a href="/index.ejs/<%= view_orders %>"><!-- a href begin -->
+                    <a href="/index/<%= view_orders %>">
                         
                         View All Orders <i class="fa fa-arrow-circle-right"></i>
                         
-                    </a><!-- a href finish -->
+                    </a>
                     
-                </div><!-- text-right finish -->
+                </div>
                 
-            </div><!-- panel-body finish -->
+            </div>
             
-        </div><!-- panel panel-primary finish -->
-    </div><!-- col-lg-8 finish -->
+        </div>
+    </div>
     
-    <div class="col-md-4"><!-- col-md-4 begin -->
-        <div class="panel"><!-- panel begin -->
-            <div class="panel-body"><!-- panel-body begin -->
-                <div class="mb-md thumb-info"><!-- mb-md thumb-info begin -->
+    <div class="col-md-4">
+        <div class="panel">
+            <div class="panel-body">
+                <div class="mb-md thumb-info">
 
                     <img src="admin_images/console.log(admin_image); " alt="console.log(admin_image); " class="rounded img-responsive">
                     
-                    <div class="thumb-info-title"><!-- thumb-info-title begin -->
+                    <div class="thumb-info-title">
                        
                         <span class="thumb-info-inner"> console.log(admin_name); </span>
                         <span class="thumb-info-type"> console.log(admin_job); </span>
                         
-                    </div><!-- thumb-info-title finish -->
+                    </div>
 
-                </div><!-- mb-md thumb-info finish -->
+                </div>
                 
-                <div class="mb-md"><!-- mb-md begin -->
-                    <div class="widget-content-expanded"><!-- widget-content-expanded begin -->
+                <div class="mb-md">
+                    <div class="widget-content-expanded">
                         <i class="fa fa-user"></i> <span> Email: </span> console.log(admin_email); <br/>
                         <i class="fa fa-flag"></i> <span> Country: </span> console.log(admin_country); <br/>
                         <i class="fa fa-envelope"></i> <span> Contact: </span> console.log(admin_contact); <br/>
-                    </div><!-- widget-content-expanded finish -->
-                    
+                    </div>
+
                     <hr class="dotted short">
                     
                     <h5 class="text-muted"> About Me </h5>
                     
-                    <p><!-- p begin -->
+                    <p>
                         
                         console.log(admin_about); 
                         
-                    </p><!-- p finish -->
+                    </p>
                     
-                </div><!-- mb-md finish -->
+                </div>
                 
-            </div><!-- panel-body finish -->
-        </div><!-- panel finish -->
-    </div><!-- col-md-4 finish -->
+            </div>
+        </div>
+    </div>
     
-</div><!-- row no: 3 finish -->
+</div>
 
 } 
