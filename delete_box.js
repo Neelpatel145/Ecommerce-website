@@ -1,4 +1,6 @@
-<script> window.open(/login/'); </script>
+<script>
+        window.open(/login/);
+</script>
         
     }else{
         
@@ -11,8 +13,5 @@
         }
         
     }
-
-
-
 
 } 
